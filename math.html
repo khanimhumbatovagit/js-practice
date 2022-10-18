@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Math Object</title>
+    <script>
+        let today = new Date();
+        console.log(today);
+
+        let pi = Math.PI;
+        console.log(pi.toFixed(3));
+
+        let randomNumber = Math.random();
+        console.log(Math.trunc(randomNumber * 100));
+
+        //Salary tax exercise//
+
+        let mySalary = 1000;
+        let federalTax = 0.23;
+        let withHeldTax = mySalary * federalTax;
+        console.log(withHeldTax.toFixed(2));
+        let totalSalary = mySalary - withHeldTax;
+        console.log(totalSalary.toFixed(2));
+        console.log(`My monthly salary of $${mySalary.toFixed(2)} is $${totalSalary.toFixed(2)} after Federal Tax.`);
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
